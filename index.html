@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <title>Triple Triade - Par Mickaël Lalanne</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="shortcut icon" type="image/x-icon" href="img/icone.png" />
+
+    <!-- Bootstrap CSS -->
+    <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-lg-12 logo"><img src="img/logo2.png"/></div>
+        <div id="auTourDe" class="col-xs-12 col-sm-12 col-lg-12 auTourDe">Au tour du joueur : <font class="equipeBleu">Bleu</font></div>
+      </div>
+      <div class="contenu">
+      <div class="plateauJeu">
+        <div class="row ligneCartes">
+              <img id="1" src="img/dosCarte.png" onclick="placeCarte(1)"/>
+              <img class="imgCentre" id="2" src="img/dosCarte.png" onclick="placeCarte(2)"/>
+              <img id="3" src="img/dosCarte.png" onclick="placeCarte(3)"/>
+        </div>
+        <div class="row ligneCartes">
+            <img id="4" src="img/dosCarte.png" onclick="placeCarte(4)"/>
+            <img class="imgCentre" id="5" src="img/dosCarte.png" onclick="placeCarte(5)"/>
+            <img id="6" src="img/dosCarte.png" onclick="placeCarte(6)"/>
+        </div>
+        <div class="row ligneCartes">
+            <img id="7" src="img/dosCarte.png" onclick="placeCarte(7)"/>
+            <img class="imgCentre" id="8" src="img/dosCarte.png" onclick="placeCarte(8)"/>
+            <img id="9" src="img/dosCarte.png" onclick="placeCarte(9)"/>
+        </div>
+      </div>
+      <div class="row decks">
+        <div id="deckBleu"></div>
+        <div id="carteSelectionne">Sélectionner une carte<img src="img/dosCarte.png"></div>
+        <div id="deckRouge"></div>
+      </div>
+    </div>
+
+    </div>
+
+  </body>
+
+  <script src="js/cartes.js"></script>
+  <script src="js/fonctions.js"></script>
+  <script src="js/initJeu.js"></script>
+
+</html>

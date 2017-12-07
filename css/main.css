@@ -1,0 +1,98 @@
+.plateauJeu{
+  flex-basis: 50%;
+  background-image:url('../img/plateauDeJeu.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+
+.logo{
+  text-align: center;
+}
+
+.logo img{
+  width: 45%;
+}
+
+.auTourDe{
+  text-align: center;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.equipeBleu{
+  font-weight: bold;
+  font-size: 175%;
+  color: #006d73;
+}
+
+.equipeRouge{
+  font-weight: bold;
+  font-size: 175%;
+  color: red;
+}
+
+.contenu{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+
+
+.ligneCartes{
+  display: flex;
+  justify-content: center;
+}
+
+.ligneCartes img{
+  margin-top:20px;
+  margin-bottom:20px;
+}
+
+.imgCentre{
+  margin-left: 65px;
+  margin-right: 65px;
+}
+
+.decks{
+  flex-basis: 50%;
+  align-self: center;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2%;
+}
+
+#carteSelectionne{
+  height: 131px;
+  margin: auto;
+}
+
+#deckBleu{
+  border: 5px solid #006d73;
+  border-radius: 5px;
+  margin-bottom: 1%;
+}
+
+#deckRouge{
+  border: 5px solid red;
+  border-radius: 5px;
+  margin-top: 1%;
+}
+
+@media all and (max-device-width: 1200px)
+{
+  .contenu{
+    flex-wrap: wrap;
+  }
+  .plateauJeu{
+    flex-basis: 100%;
+  }
+  .decks{
+    flex-basis: 100%;
+  }
+  .ligneCartes img{
+    width: 10%;
+    height: 10%;
+  }
+}
